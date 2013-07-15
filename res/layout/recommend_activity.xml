@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/hotspot_webview_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="#ffc8c8c8" android:gravity="center" android:layout_gravity="center" android:id="@id/webview_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/load_fail" android:drawableTop="@drawable/fail_bg" android:drawablePadding="14.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffc8c8c8" android:gravity="center" android:layout_gravity="center" android:id="@id/webview_crash_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/no_support_page" android:drawableTop="@drawable/fail_bg" android:drawablePadding="14.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-12.0dip">
+        <ProgressBar android:layout_gravity="center" android:id="@id/recommend_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleInverse" />
+    </FrameLayout>
+</RelativeLayout>

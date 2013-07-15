@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="top" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/title_margin">
+            <Button android:layout_gravity="center_vertical" android:id="@id/enter_forum_dir" android:tag="skin_top_more_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/catalogue_name" android:layout_centerVertical="true" style="@style/title_comm" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_bg_layout" android:background="@drawable/inputbox_top2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_toRightOf="@id/enter_forum_dir" android:layout_centerVertical="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/home_search_logo" />
+                <TextView android:textSize="12.0sp" android:textColorHint="#ffa5a6a8" android:gravity="center_vertical" android:id="@id/search_bar_text" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/search_bar_post" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/lv_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.baidu.adp.widget.ListView.BdListView android:id="@id/enter_forum_lv_forum" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="@*android:color/transparent" android:divider="@null" android:smoothScrollbar="true" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/enter_forum_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-40.0dip" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleInverse" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/browser_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <EditText android:textSize="16.0dip" android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="40.0dip" android:singleLine="true" />
+            <ImageView android:id="@id/go_btn" android:layout_width="wrap_content" android:layout_height="35.0dip" android:src="@drawable/browser_toolbar_forward_btn" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/loadbar" android:layout_width="fill_parent" android:layout_height="10.0dip" android:max="100" android:progress="0" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/rootview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="52.0dip" android:layout_marginBottom="40.0dip" android:layout_alignTop="@id/topbar" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0px" android:src="@drawable/browser_toolbar_back_btn" android:layout_weight="0.25" />
+        <ImageView android:id="@id/forward_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0px" android:src="@drawable/browser_toolbar_forward_btn" android:layout_weight="0.25" />
+        <ImageView android:id="@id/refresh_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0px" android:src="@drawable/browser_refresh" android:layout_weight="0.25" />
+        <ImageView android:id="@id/stop_btn" android:paddingTop="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0px" android:src="@drawable/browser_help_close" android:layout_weight="0.25" />
+    </LinearLayout>
+</RelativeLayout>

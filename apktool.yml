@@ -1,0 +1,12 @@
+version: 1.5.2
+apkFileName: tbclient_4_2_2.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '5'
+packageInfo:
+  cur_package: com.baidu.tieba
+  orig_package: com.baidu.tieba
+compressionType: true

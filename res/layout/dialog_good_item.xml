@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/frs_good_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/frs_dia_good_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="right" android:id="@id/frs_dia_divider" android:background="#ff777777" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+</LinearLayout>

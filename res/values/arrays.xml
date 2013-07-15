@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_view_images">
+        <item>@string/view_images_open</item>
+        <item>@string/view_images_close</item>
+    </string-array>
+    <string-array name="menu_remind_tone">
+        <item>@string/remind_tone_open</item>
+        <item>@string/remind_tone_close</item>
+    </string-array>
+    <string-array name="menu_recommend_push">
+        <item>@string/recommend_on</item>
+        <item>@string/remind_tone_close</item>
+    </string-array>
+    <string-array name="menu_on_off">
+        <item>@string/on</item>
+        <item>@string/off</item>
+    </string-array>
+    <string-array name="fiter_name">
+        <item>normal|原图</item>
+        <item>skin|人像美白</item>
+        <item>lomo|LOMO</item>
+        <item>classichdr|经典HDR</item>
+        <item>nashiv|复古</item>
+        <item>fleeting|流年</item>
+        <item>bluetone|蓝调</item>
+        <item>elegant|清新</item>
+        <item>timetravel|穿越</item>
+        <item>romantic|梦幻</item>
+        <item>sketch|素描</item>
+        <item>etoc|正片负冲</item>
+        <item>neon|霓虹</item>
+        <item>sunny|日照</item>
+        <item>snow|飘雪</item>
+        <item>yellow|泛黄</item>
+        <item>gray|黑白</item>
+        <item>heaven|绿野仙踪</item>
+    </string-array>
+</resources>

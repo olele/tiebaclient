@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/title_margin">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/comm_controls" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/titel_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/title_info_shadow" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/home" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/comm_controls" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/settings" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" style="@style/title_comm" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.adp.widget.ScrollView.BdPullRefreshScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/person_info_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/background_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="fitXY" />
+                            <ImageView android:layout_gravity="bottom" android:background="@drawable/cent_banner_zhezhao_n" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </FrameLayout>
+                        <ImageView android:id="@id/background_bottom" android:layout_width="fill_parent" android:layout_height="43.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="bottom" android:id="@id/info_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@id/photo_frame" android:background="@null" android:layout_width="77.0dip" android:layout_height="77.0dip" android:layout_marginBottom="15.0dip" android:foreground="@drawable/pic_bj_touxiang_n">
+                            <ImageView android:layout_gravity="center" android:id="@id/photo" android:background="#fff0f3f4" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/person_photo" android:scaleType="fitXY" />
+                        </FrameLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="25.0dip">
+                                <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                                    <ImageView android:layout_gravity="center_vertical" android:id="@id/sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                                </LinearLayout>
+                                <LinearLayout android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                    <LinearLayout android:gravity="center" android:id="@id/attention" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="68.0dip">
+                                        <TextView android:textSize="12.0sp" android:textColor="#ffdfdfdf" android:gravity="center" android:id="@id/attention_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                        <ProgressBar android:id="@id/attention_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleSmall" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <TextView android:textSize="12.0dip" android:ellipsize="end" android:id="@id/intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+                            <LinearLayout android:gravity="center_vertical" android:id="@id/btn_chat" android:background="@drawable/btn_blue_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <ImageView android:id="@id/chat_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/icon_cent_lately" />
+                                <TextView android:textSize="14.0sp" android:id="@id/chat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="12.0dip" android:text="@string/my_chat" />
+                                <TextView android:gravity="center" android:id="@id/chat_num" android:background="@drawable/btn_cent_nomber_n" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="11" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/personal_big_button_panel">
+                            <LinearLayout android:id="@id/button_likes" style="@style/personal_big_button">
+                                <ImageView android:id="@id/likes_image" style="@style/personal_big_button_icon" />
+                                <TextView android:id="@id/likes_text" style="@style/personal_big_button_text" />
+                                <TextView android:id="@id/likes_num" style="@style/personal_big_button_text_number" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout style="@style/personal_big_button_panel">
+                            <LinearLayout android:id="@id/button_attention" style="@style/personal_big_button">
+                                <ImageView android:id="@id/attention_image" style="@style/personal_big_button_icon" />
+                                <TextView android:id="@id/my_attention_text" style="@style/personal_big_button_text" />
+                                <TextView android:id="@id/attention_num" style="@style/personal_big_button_text_number" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout style="@style/personal_big_button_panel">
+                            <LinearLayout android:id="@id/button_fans" style="@style/personal_big_button">
+                                <ImageView android:id="@id/fans_image" style="@style/personal_big_button_icon" />
+                                <TextView android:id="@id/fans_text" style="@style/personal_big_button_text" />
+                                <TextView android:id="@id/fans_num" style="@style/personal_big_button_text_number" />
+                            </LinearLayout>
+                            <TextView android:id="@id/new_fans_count" style="@style/personal_big_button_text_new_number" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout style="@style/personal_big_button_panel">
+                            <LinearLayout android:id="@id/button_mypost" style="@style/personal_big_button">
+                                <ImageView android:id="@id/my_post_image" style="@style/personal_big_button_icon" />
+                                <TextView android:id="@id/my_post_text" android:text="@string/my_post" style="@style/personal_big_button_text" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout style="@style/personal_big_button_panel">
+                            <LinearLayout android:id="@id/button_lbs" style="@style/personal_big_button">
+                                <ImageView android:id="@id/lbs_image" style="@style/personal_big_button_icon" />
+                                <TextView android:id="@id/lbs_text" style="@style/personal_big_button_text" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout style="@style/personal_big_button_panel">
+                            <LinearLayout android:id="@id/button_mention" style="@style/personal_big_button">
+                                <ImageView android:id="@id/my_msg_image" style="@style/personal_big_button_icon" />
+                                <TextView android:id="@id/my_msg_text" android:text="@string/my_mention" style="@style/personal_big_button_text" />
+                            </LinearLayout>
+                            <TextView android:id="@id/new_mention_count" style="@style/personal_big_button_text_new_number" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="fill_parent" android:layout_weight="2.0" style="@style/personal_big_button_panel">
+                            <LinearLayout android:id="@id/button_bookmark" style="@style/personal_big_button">
+                                <ImageView android:id="@id/bookmark_image" style="@style/personal_big_button_icon" />
+                                <TextView android:id="@id/bookmark_text" android:text="@string/my_mark" style="@style/personal_big_button_text" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" style="@style/personal_big_button_panel" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.baidu.adp.widget.ScrollView.BdPullRefreshScrollView>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/not_login_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/not_login_img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:id="@id/not_login_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你还没有登录哦，赶快去登录吧！" />
+            <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="18.0dip" android:gravity="center" android:id="@id/login_btn" android:layout_width="0.0dip" android:layout_height="46.0dip" android:layout_marginRight="12.0dip" android:text="登录" android:layout_weight="1.0" />
+                <Button android:textSize="18.0dip" android:gravity="center" android:id="@id/reg_btn" android:layout_width="0.0dip" android:layout_height="46.0dip" android:text="注册" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleInverse" />
+    </FrameLayout>
+</LinearLayout>

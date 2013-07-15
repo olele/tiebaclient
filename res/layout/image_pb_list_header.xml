@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baidu.tieba.view.ImagePbImageView android:id="@id/image_pb_image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.baidu.tieba.view.CustomTextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/image_pb_comment" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/seg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="11.0dip">
+        <TextView android:textSize="11.0sp" android:textColor="#ff6793da" android:gravity="left" android:layout_gravity="right" android:id="@id/image_pb_author" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:gravity="right" android:id="@id/image_pb_reply_number" android:paddingRight="9.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_comment_gray" android:drawablePadding="4.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

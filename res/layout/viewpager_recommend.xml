@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bg_rel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip">
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/suggent_tag" android:paddingLeft="11.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="35.0dip" android:singleLine="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="11.0dip" android:layout_below="@id/suggent_tag">
+            <com.baidu.tieba.view.ImageViewDrawer android:id="@id/avator" android:layout_width="@dimen/iamge_icon_width_height" android:layout_height="@dimen/iamge_icon_width_height" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/like" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/like" android:layout_toRightOf="@id/avator" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:id="@id/forum_name_tx" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:layout_marginTop="6.0dip" android:text="Title" android:singleLine="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/counts" android:paddingTop="12.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip">
+                    <TextView android:textSize="10.0sp" android:gravity="center_vertical" android:id="@id/member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="5.0dip" />
+                    <TextView android:textSize="10.0sp" android:gravity="center_vertical" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:drawablePadding="5.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="10.0sp" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:maxLines="2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.baidu.tieba.view.PageIndex android:id="@id/page_num" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

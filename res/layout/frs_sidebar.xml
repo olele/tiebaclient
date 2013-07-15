@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parent" android:background="#ff17181a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/show_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/show_title" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/content" style="@style/sidebar_title" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/show_all" android:background="@drawable/frs_sidebar_click" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <TextView android:id="@id/show_all_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_all" style="@style/sidebar_content" />
+            </LinearLayout>
+            <include layout="@layout/frs_sidebar_splitter" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/show_good" android:background="@drawable/frs_sidebar_click" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <TextView android:id="@id/show_good_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_good" style="@style/sidebar_content" />
+            </LinearLayout>
+            <include layout="@layout/frs_sidebar_splitter" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/show_image" android:background="@drawable/frs_sidebar_click" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <TextView android:id="@id/show_image_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_image" style="@style/sidebar_content" />
+            </LinearLayout>
+            <include layout="@layout/frs_sidebar_splitter" />
+            <TextView android:id="@id/setting_title" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/setup" style="@style/sidebar_title" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/abstract_selection" android:background="@drawable/frs_sidebar_bg" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <TextView android:id="@id/abstract_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/abstract_state" android:layout_weight="1.0" style="@style/sidebar_content" />
+                <com.baidu.adp.widget.BdSwitchView.BdSwitchView android:id="@id/abstract_state_switch" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/frs_sidebar_splitter" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/eyeshield_mode" android:background="@drawable/frs_sidebar_bg" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <TextView android:id="@id/eyeshield_mode_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/eyeshield_mode" android:layout_weight="1.0" style="@style/sidebar_content" />
+                <com.baidu.adp.widget.BdSwitchView.BdSwitchView android:id="@id/eyeshield_mode_switch" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/frs_sidebar_splitter" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/add_to_window_layout" android:background="@drawable/frs_sidebar_click" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <TextView android:id="@id/add_to_window" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_to_window" style="@style/sidebar_content" />
+            </LinearLayout>
+            <include layout="@layout/frs_sidebar_splitter" />
+            <LinearLayout android:orientation="vertical" android:id="@id/inform_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/inform_title" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/inform" style="@style/sidebar_title" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/message_layout" android:background="@drawable/frs_sidebar_click" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:id="@id/message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_mention" style="@style/sidebar_content" />
+                    <RelativeLayout android:id="@id/message_info" android:layout_width="32.0dip" android:layout_height="17.0dip" android:layout_marginLeft="6.0dip">
+                        <Button android:textSize="12.0sp" android:textColor="#ffe95620" android:id="@id/message_btn" android:background="@drawable/pic_frs_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <include layout="@layout/frs_sidebar_splitter" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/chat_layout" android:background="@drawable/frs_sidebar_click" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:id="@id/chat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_chat" style="@style/sidebar_content" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffe95620" android:gravity="center" android:id="@id/new_chat" android:background="@drawable/pic_frs_message" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="17.0dip" android:layout_marginLeft="6.0dip" />
+                </LinearLayout>
+                <include layout="@layout/frs_sidebar_splitter" />
+            </LinearLayout>
+            <TextView android:id="@id/like_forum_text" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/like_browser_bar" style="@style/sidebar_title" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/like_forum_layout" android:background="@drawable/frs_sidebar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

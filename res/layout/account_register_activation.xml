@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/container" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="#ffe00000" android:gravity="center_vertical" android:id="@id/text_error" android:paddingTop="2.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="25.0dip" android:singleLine="true" android:drawableLeft="@drawable/login_error" />
+            <LinearLayout android:id="@id/sms_code_input_bg" android:background="@drawable/pass_input" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/reg_font_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activation_code" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/reg_font_color" android:textColorHint="#ffdddddd" android:layout_gravity="center_vertical" android:id="@id/edit_code" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:hint="@string/input_active_code" android:singleLine="true" android:maxLength="6" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/del_code" android:background="@null" android:padding="6.0dip" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_search_quit" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/done" android:background="@drawable/login_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ProgressBar android:id="@id/progress_done" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:indeterminateDrawable="@drawable/login_progressbar" android:layout_toLeftOf="@id/done_text" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:id="@id/done_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/reg_font_color" android:id="@id/no_receive_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="32.0dip" android:text="@string/no_receive_code" />
+            <RelativeLayout android:id="@id/resend" android:background="@drawable/login_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <ProgressBar android:id="@id/progress_resend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:indeterminateDrawable="@drawable/login_progressbar" android:layout_toLeftOf="@id/resend_text" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:id="@id/resend_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resend_code" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/title_margin">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/comm_controls" />
+        <TextView android:gravity="center" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_regedit_baidu" android:singleLine="true" android:layout_centerInParent="true" style="@style/title_info_shadow" />
+    </RelativeLayout>
+</RelativeLayout>

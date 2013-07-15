@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="9.0dip" android:paddingTop="0.0dip" android:paddingRight="9.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@drawable/input_name_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="11.0dip" android:paddingTop="15.0dip" android:paddingRight="11.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#ff505050" android:id="@id/phone_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff505050" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:text="@string/input_username_info" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <EditText android:textSize="13.0sp" android:textColor="@color/black" android:textColorHint="@color/text_hint_color" android:id="@id/account" android:background="@drawable/input_box_name_bg" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/check_username" android:background="@drawable/check_name_button_bg" android:padding="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_username" />
+                    <ProgressBar android:layout_gravity="center" android:id="@id/check_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleSmall" />
+                </FrameLayout>
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ffff6d6d" android:id="@id/error_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/names_group" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <RadioButton android:textSize="13.0sp" android:textColor="#ff3b3b3b" android:id="@id/name1" android:background="@*android:color/transparent" android:paddingLeft="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:button="@drawable/check_button" android:layout_weight="1.0" />
+                <RadioButton android:textSize="13.0sp" android:textColor="#ff3b3b3b" android:id="@id/name2" android:background="@*android:color/transparent" android:paddingLeft="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:button="@drawable/check_button" android:layout_weight="1.0" />
+                <RadioButton android:textSize="13.0sp" android:textColor="#ff3b3b3b" android:id="@id/name3" android:background="@*android:color/transparent" android:paddingLeft="24.0dip" android:nextFocusRight="@id/confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:button="@drawable/check_button" android:layout_weight="1.0" />
+            </RadioGroup>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                    <Button android:textSize="14.0sp" android:textColor="#ff3b3b3b" android:id="@id/confirm" android:background="@drawable/search_bt_background" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm" />
+                    <ProgressBar android:layout_gravity="center" android:id="@id/confirm_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleSmall" />
+                </FrameLayout>
+                <Button android:textSize="14.0sp" android:textColor="#ff3b3b3b" android:id="@id/back" android:background="@drawable/search_bt_background" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/back" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

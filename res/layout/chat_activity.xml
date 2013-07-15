@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.tieba.view.KeyboardEventLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/title_margin">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/comm_controls" />
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/title_info_shadow" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" style="@style/title_comm" />
+    </LinearLayout>
+    <com.baidu.tieba.view.ClickableLayout4Frame android:id="@id/chat_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/post_layout" android:layout_below="@id/title">
+        <com.baidu.adp.widget.ListView.BdListView android:layout_gravity="bottom" android:id="@id/chat_list" android:padding="0.0px" android:fadingEdge="vertical" android:fadingEdgeLength="3.0dip" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="@*android:color/transparent" android:divider="#00000000" android:dividerHeight="5.0dip" android:fastScrollEnabled="true" android:smoothScrollbar="true" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleInverse" />
+    </com.baidu.tieba.view.ClickableLayout4Frame>
+    <LinearLayout android:orientation="horizontal" android:id="@id/post_layout" android:background="@drawable/pb_input_bg" android:paddingLeft="6.0dip" android:paddingTop="2.0dip" android:paddingRight="6.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <EditText android:textSize="14.0sp" android:textColorHint="#ffa5a6a8" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/reply_content" android:background="@drawable/pb_input_edit" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/pb_reply_hint" android:maxLines="4" android:maxLength="500" android:layout_weight="1.0" />
+        <Button android:enabled="false" android:textSize="14.0sp" android:textColor="@color/gray_3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/chat_post" android:background="@drawable/btn_post_dl_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/send_post" />
+    </LinearLayout>
+</com.baidu.tieba.view.KeyboardEventLayout>

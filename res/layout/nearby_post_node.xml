@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/nearby_post_layout" android:background="@drawable/nearby_post_content_bg_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:gravity="center_vertical" android:id="@id/content_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.baidu.tieba.view.NearbyImageView android:id="@id/content_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/div_post" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/author_photo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="#ff028ae8" android:id="@id/author_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/post_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button android:textSize="12.0sp" android:textColor="#ff028ae8" android:gravity="right" android:id="@id/comment_btn" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment" android:drawableLeft="@drawable/nearby_post_comment_btn" android:drawablePadding="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/nearby_reply_layout" android:background="@drawable/nearby_post_reply_bg_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/more_reply_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <ImageView android:id="@id/points" android:background="@drawable/points_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="6.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff262626" android:gravity="center_vertical" android:id="@id/view_more_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/div_reply" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <ImageView android:id="@id/replyer_photo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff262626" android:id="@id/reply_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/reply_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

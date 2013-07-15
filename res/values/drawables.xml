@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="browser_SettingsActivityBackGround">#ffffffff</item>
+    <item type="drawable" name="browser_null_drawable">#00000000</item>
+    <item type="drawable" name="browser_search_bg_normal">#00000000</item>
+    <item type="drawable" name="browser_search_bg_press">#33000000</item>
+</resources>

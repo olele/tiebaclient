@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:id="@id/server_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView01" />
+    <TextView android:textSize="12.0dip" android:id="@id/server_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="TextView02" android:layout_below="@id/server_title" />
+    <View android:background="#ff333399" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</RelativeLayout>

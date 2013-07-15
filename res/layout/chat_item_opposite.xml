@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:richText="http://schemas.android.com/apk/res/com.baidu.tieba">
+    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:orientation="horizontal" android:id="@id/time" android:background="@drawable/bj_time_chat" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:layout_marginBottom="15.0sp" />
+    <RelativeLayout android:gravity="top|left|center" android:paddingRight="34.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baidu.tieba.view.HeadImageView android:id="@id/photo" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" />
+        <com.baidu.tbadk.widget.richText.TbRichTextView android:id="@id/text" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_toRightOf="@id/photo" richText:textSize="15.0sp" />
+    </RelativeLayout>
+</LinearLayout>

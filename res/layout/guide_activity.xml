@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.tieba.view.BaseViewPager android:layout_gravity="center" android:id="@id/guide_pager" android:background="#ff000000" android:clickable="true" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/topBar" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tagsGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/page1" android:background="@drawable/tag_page_rb_normal" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginLeft="10.0dip" />
+            <ImageView android:id="@id/page2" android:background="@drawable/tag_page_rb_click" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/guide_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleInverse" />
+    </FrameLayout>
+</RelativeLayout>

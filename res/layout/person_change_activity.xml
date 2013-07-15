@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:background="@color/backgroundcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/title_margin">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/comm_controls" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/title_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_info" android:layout_weight="1.0" style="@style/title_info_shadow" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save" style="@style/title_comm" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/info" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                <FrameLayout android:id="@id/frame_photo" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="8.0dip" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/photo" android:background="@drawable/person_photo_bg" android:padding="5.0dip" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/person_photo" android:scaleType="fitCenter" />
+                    <ProgressBar android:layout_gravity="center" android:id="@id/image_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleSmall" />
+                </FrameLayout>
+                <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_toRightOf="@id/frame_photo" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:id="@id/change_text" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_head" android:singleLine="true" android:drawableRight="@drawable/right_arrow" android:drawablePadding="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/divider1" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="#ff262626" android:id="@id/sex_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" android:text="@string/sex" android:singleLine="true" android:layout_centerVertical="true" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/sexgroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <RadioButton android:textSize="16.0dip" android:textColor="#ff262626" android:id="@id/man" android:paddingLeft="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/sex_radio_male_bn" android:text="@string/man" />
+                    <RadioButton android:textSize="16.0dip" android:textColor="#ff262626" android:id="@id/woman" android:paddingLeft="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:button="@drawable/sex_radio_famale_bn" android:text="@string/woman" android:drawablePadding="7.0dip" />
+                </RadioGroup>
+            </RelativeLayout>
+            <ImageView android:id="@id/divider2" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:id="@id/intro_click" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0dip" android:textColor="#ff262626" android:id="@id/intro_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="8.0dip" android:text="@string/self_intro" android:singleLine="true" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff262626" android:id="@id/intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" />
+                <EditText android:textSize="16.0dip" android:textColor="#ff505050" android:gravity="fill_horizontal|top|center" android:id="@id/edit" android:background="@drawable/person_change_abstract_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="8.0dip" android:minLines="1" android:maxLength="50" />
+            </LinearLayout>
+            <ImageView android:id="@id/divider3" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

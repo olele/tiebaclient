@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:paddingTop="4.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baidu.tieba.view.ImageViewDrawer android:id="@id/forum_icon" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginLeft="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="#ff262626" android:id="@id/recommend_forum_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="170.0dip" android:singleLine="true" style="@style/text_shadow_style_1" />
+            <TextView android:textSize="12.0sp" android:id="@id/forum_abstract" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" style="@style/text_shadow_style_1" />
+        </LinearLayout>
+        <ImageView android:id="@id/recommend_like" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/lv_seperator" android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

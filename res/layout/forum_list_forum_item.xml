@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.tieba.view.ImageViewDrawer android:layout_gravity="center_vertical" android:id="@id/forum_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="#ff353941" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="#ff8791a2" android:gravity="center_vertical" android:id="@id/member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:drawableLeft="@drawable/ico_people" android:drawablePadding="4.0dip" />
+            <TextView android:textSize="10.0dip" android:textColor="#ff8791a2" android:gravity="center_vertical" android:id="@id/thread_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ico_discuss" android:drawablePadding="4.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="10.0sp" android:textColor="#ff8791a2" android:ellipsize="end" android:id="@id/slogan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/like" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" />
+</LinearLayout>

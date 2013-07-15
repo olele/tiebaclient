@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ff7bb1f1" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/timeline_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.baidu.tieba.view.CustomTextView android:textSize="14.0sp" android:textColor="#ff262626" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.baidu.tieba.view.PbImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/pos_icon" android:background="@drawable/lbs_icon_pb_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@id/position" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff028ae8" android:id="@id/reply_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/nearby_post_comment_btn" android:drawablePadding="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

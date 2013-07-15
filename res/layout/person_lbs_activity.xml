@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/title_margin">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/comm_controls" />
+        <TextView android:gravity="center_horizontal" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/title_info_shadow" />
+        <ImageView android:id="@id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/comm_controls" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/list" android:padding="0.0px" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@*android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:smoothScrollbar="true" />
+        <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleInverse" />
+    </FrameLayout>
+</LinearLayout>

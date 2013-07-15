@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/frs_star_title" android:background="@drawable/bg_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/frs_star_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.baidu.tieba.view.FrsStarImageView android:id="@id/frs_star_top_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/frs_star_shadow" android:background="@drawable/frs_star_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/frs_star_top_pic" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/frs_star_center_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/frs_star_top_layout">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/frs_star_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/forum_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff40464f" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/forum_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip">
+                    <ImageView android:id="@id/member_image" android:background="@drawable/icon_little_people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                    <TextView android:textSize="9.0sp" android:textColor="#ffb2b6ba" android:id="@id/member_num_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/member_image" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/post_image" android:background="@drawable/icon_little_discuss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/member_num_text" android:layout_centerVertical="true" />
+                    <TextView android:textSize="9.0sp" android:textColor="#ffb2b6ba" android:id="@id/post_num_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/post_image" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_below="@id/frs_star_center_layout">
+        <RelativeLayout android:id="@id/frs_fan_bottom_layout" android:layout_width="78.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip">
+            <RelativeLayout android:id="@id/fan_timer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.baidu.tieba.view.CustomTimerView android:id="@id/open_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0dip" android:textColor="#ff93a6b8" android:id="@id/add_fan_intro_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fan_count_down" android:layout_below="@id/open_timer" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <Button android:textSize="12.0sp" android:textColor="#ff3c85e0" android:id="@id/add_fan" android:background="@drawable/frs_star_add_fan" android:layout_width="78.0dip" android:layout_height="30.0dip" android:text="@string/add_fan" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/fan_num_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/fan_num_icon" android:background="@drawable/label_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffd14d1e" android:id="@id/fan_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/fan_num_icon" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip">
+            <Button android:id="@id/btn_love" android:background="@drawable/frs_btn_like" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/btn_love_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ff262626" android:id="@id/level_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff262626" android:id="@id/level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:layout_toRightOf="@id/level_name" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/love_level_bg" android:background="@drawable/progressbar_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/level_name" android:layout_alignParentBottom="true" />
+                <ImageView android:id="@id/love_level_top" android:background="@drawable/progressbar_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/level_name" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <Button android:id="@id/btn_sign" android:background="@drawable/frs_btn_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/btn_love" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/frs_star_photo_layout" android:layout_width="78.0dip" android:layout_height="78.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/bottom_info">
+        <com.baidu.tieba.view.FrsStarImageView android:id="@id/frs_star_bottom_photo" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/frs_star_bottom_bg" android:background="@drawable/pic_bj_touxiang_n" android:layout_width="78.0dip" android:layout_height="78.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

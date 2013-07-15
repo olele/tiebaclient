@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip">
+        <ImageView android:gravity="center" android:layout_gravity="left|center" android:id="@id/portrait" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/icon_all_categories" android:scaleType="fitXY" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="17.0sp" android:layout_gravity="left|center" android:id="@id/name" android:tag="skin_text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bar_all_categories" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:tag="skin_arrow" style="@style/setting_bg_arrow" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_down" android:background="@*android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+</LinearLayout>

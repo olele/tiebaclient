@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parent" android:background="@color/backgroundcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/account_manager" android:layout_marginTop="10.0dip" style="@style/setting_bg_layout">
+                <TextView android:id="@id/account_name" android:text="@string/account_manager" style="@style/setting_bg_text" />
+                <ImageView android:id="@id/arrow" style="@style/setting_bg_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/person_info" style="@style/setting_bg_layout">
+                <TextView android:id="@id/person_info_text" android:text="@string/person_info_text" style="@style/setting_bg_text" />
+                <ImageView android:id="@id/arrow1" style="@style/setting_bg_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/msg_remind" android:layout_marginTop="10.0dip" style="@style/setting_bg_layout">
+                <TextView android:id="@id/msg_remind_text" android:text="@string/msg_remind" style="@style/setting_bg_text" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff7f7f7f" android:id="@id/frequency_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" />
+                <ImageView android:id="@id/arrow2" style="@style/setting_bg_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/sign_remind" style="@style/setting_bg_layout">
+                <TextView android:id="@id/sign_remind_text" android:text="@string/sign_remind" style="@style/setting_bg_text" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff7f7f7f" android:id="@id/sign_remind_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" />
+                <ImageView android:id="@id/arrow7" style="@style/setting_bg_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/browse_setting" android:layout_marginTop="10.0dip" style="@style/setting_bg_layout">
+                <TextView android:id="@id/browse_setting_text" android:text="@string/browse_setting_spannable" style="@style/setting_bg_text" />
+                <ImageView android:id="@id/arrow3" style="@style/setting_bg_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/abstract_selection" style="@style/setting_bg_layout">
+                <TextView android:id="@id/abstract_text" android:text="@string/abstract_state" style="@style/setting_bg_text" />
+                <com.baidu.adp.widget.BdSwitchView.BdSwitchView android:layout_gravity="center_vertical" android:id="@id/abstract_state_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/eyeshield_mode" style="@style/setting_bg_layout">
+                <TextView android:id="@id/eyeshield_mode_text" android:text="@string/eyeshield_mode" style="@style/setting_bg_text" />
+                <com.baidu.adp.widget.BdSwitchView.BdSwitchView android:layout_gravity="center_vertical" android:id="@id/eyeshield_mode_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/upload_image_quality" style="@style/setting_bg_layout">
+                <TextView android:id="@id/image_quality_text" android:text="@string/upload_image_quality" style="@style/setting_bg_text" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff7f7f7f" android:layout_gravity="center_vertical" android:id="@id/text_upload_image_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/recommend_app" android:layout_marginTop="10.0dip" style="@style/setting_bg_layout">
+                <TextView android:id="@id/recommend_app_text" android:text="@string/recommend_app" style="@style/setting_bg_text" />
+                <ImageView android:id="@id/arrow4" style="@style/setting_bg_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/promoted_message" android:layout_marginTop="10.0dip" style="@style/setting_bg_layout">
+                <TextView android:id="@id/promoted_message_text" android:text="@string/promoted_message_text" style="@style/setting_bg_text" />
+                <com.baidu.adp.widget.BdSwitchView.BdSwitchView android:layout_gravity="center_vertical" android:id="@id/promoted_message_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/share_location_layout" style="@style/setting_bg_layout">
+                <TextView android:id="@id/share_location_text" android:text="@string/share_location" style="@style/setting_bg_text" />
+                <com.baidu.adp.widget.BdSwitchView.BdSwitchView android:layout_gravity="center_vertical" android:id="@id/share_location_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/position_paper" android:layout_marginTop="10.0dip" style="@style/setting_bg_layout">
+                <TextView android:id="@id/position_paper_text" android:text="@string/feedback" style="@style/setting_bg_text" />
+                <ImageView android:id="@id/arrow5" style="@style/setting_bg_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/clear_cash" style="@style/setting_bg_layout">
+                <TextView android:id="@id/clear_cash_text" android:text="@string/clear_cash" style="@style/setting_bg_text" />
+            </LinearLayout>
+            <FrameLayout android:gravity="center_vertical" android:layout_marginBottom="10.0dip" style="@style/setting_bg_layout">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/about_tieba" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/about_tieba_text" android:text="@string/about_tieba" style="@style/setting_bg_text" />
+                    <ImageView android:id="@id/arrow6" style="@style/setting_bg_arrow" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/new_version_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="108.0dip" android:src="@drawable/ico_news_prompt" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:layout_gravity="top" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/title_margin">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:gravity="center_horizontal" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup" android:singleLine="true" android:layout_centerInParent="true" style="@style/title_info_shadow" />
+    </RelativeLayout>
+</RelativeLayout>

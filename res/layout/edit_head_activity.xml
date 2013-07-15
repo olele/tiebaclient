@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/filters_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.tieba.view.EditHeadImageView android:id="@id/image" android:scrollbars="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:id="@id/title" android:background="@drawable/editimage_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ffffffff" android:gravity="right|center" android:layout_gravity="center_vertical" android:id="@id/back" android:background="@drawable/editimage_back" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/back" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/editimage_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/edit_head" android:layout_weight="1.0" />
+        <Button android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/delete" android:background="@drawable/editimage_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="@string/upload" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleInverse" />
+    <Button android:layout_gravity="bottom|right|center" android:id="@id/show_button" android:background="@drawable/hide_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+    <include android:id="@id/beautify_rotate" layout="@layout/beautify" />
+</FrameLayout>

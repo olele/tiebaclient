@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/backgroundcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title" android:background="@drawable/titlebar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/title_margin">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/back" android:background="@drawable/title_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/icon_return_n" android:text="@string/back" style="@style/comm_controls" />
+        <TextView android:gravity="center_horizontal" android:id="@id/title_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_friend" android:singleLine="true" android:layout_weight="1.0" style="@style/title_info_shadow" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/refresh" android:background="@drawable/title_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_refresh_n" style="@style/comm_controls" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleSmall" />
+        </FrameLayout>
+    </LinearLayout>
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/softkey" android:layout_below="@id/title" />
+    <LinearLayout android:id="@id/softkey" android:background="@drawable/web_button_bg" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginTop="-4.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/webBack" android:background="@drawable/web_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/web_button_left" android:scaleType="center" android:text="@string/back" android:layout_weight="1.0" style="@style/comm_controls" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/webForward" android:background="@drawable/web_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/web_button_right" android:scaleType="center" android:text="@string/refresh" android:layout_weight="1.0" style="@style/comm_controls" />
+    </LinearLayout>
+</RelativeLayout>

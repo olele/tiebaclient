@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="78.0dip" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tag_bg_view_layout" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginTop="8.0dip">
+        <ImageView android:id="@id/tag_setting_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tag_layer_tag" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/white" android:id="@id/tag_setting_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="4" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/tag_setting_item_del" android:background="#00000000" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="56.0dip" android:src="@drawable/tag_close_button" android:scaleType="center" />
+</RelativeLayout>

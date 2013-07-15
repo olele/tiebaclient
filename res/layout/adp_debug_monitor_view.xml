@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="100.0dip" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/debug_switch" android:background="@drawable/adp_debug_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/debug_app_name" />
+        <ImageButton android:id="@id/debug_refresh" android:background="@drawable/adp_debug_refresh" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/debug_app_name" />
+        <TextView android:textColor="#ff333333" android:id="@id/debug_text" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="[Monitor]" android:shadowColor="#ff333333" android:layout_toRightOf="@id/debug_switch" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/monitor_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ff333399" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333399" android:id="@id/debug_fps" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fps:0" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333399" android:id="@id/debug_mem" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mem:0kb" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333399" android:id="@id/debug_cpu" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cpu:0%" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333399" android:id="@id/debug_gc" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="gc:0" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333399" android:id="@id/debug_sm" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="strictMode:0" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333399" android:id="@id/debug_bt" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bt:0%" />
+    </LinearLayout>
+</LinearLayout>

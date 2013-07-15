@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mention_tabs" />
+    <RelativeLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/title_margin">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/comm_controls" />
+        <TextView android:gravity="center" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remind" android:singleLine="true" android:layout_centerInParent="true" style="@style/title_info_shadow" />
+        <ImageView android:id="@id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/mention_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <RadioButton android:textSize="16.0sp" android:textColor="#ff3b3b3b" android:gravity="center" android:layout_gravity="center" android:id="@id/replyme_tab" android:padding="0.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="@string/mention_replyme" android:layout_weight="1.0" />
+        <RadioButton android:textSize="16.0sp" android:textColor="#ff3b3b3b" android:gravity="center" android:layout_gravity="center" android:id="@id/atme_tab" android:padding="0.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="@string/mention_atme" android:layout_weight="1.0" />
+    </RadioGroup>
+</RelativeLayout>

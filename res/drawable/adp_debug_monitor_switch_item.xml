@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/switch_monitor_item" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:id="@id/switch_monitor_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Monitor浮层" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff7f7f7f" android:id="@id/switch_monitor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="关" android:singleLine="true" />
+    <ImageView android:id="@id/switch_monitor_button" android:background="@drawable/adp_debug_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+</LinearLayout>

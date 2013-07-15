@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/browser_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/browser_bottom_toolbar_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/browser_toolbar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:gravity="center" android:id="@id/browser_exit" android:background="@drawable/browser_button_back_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/browser_toolbar_btn_close_window" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/browser_divider" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="wrap_content" />
+        <ImageButton android:gravity="center" android:id="@id/browser_back" android:background="@drawable/browser_button_back_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/browser_back_selector" android:layout_weight="1.0" />
+        <ImageButton android:gravity="center" android:id="@id/browser_forword" android:background="@drawable/browser_button_back_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/browser_forword_selector" android:layout_weight="1.0" />
+        <ImageButton android:gravity="center" android:id="@id/browser_refresh" android:background="@drawable/browser_button_back_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/browser_refresh_selector" android:layout_weight="1.0" />
+        <ImageButton android:gravity="center" android:id="@id/browser_cancel" android:background="@drawable/browser_button_back_selector" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/browser_cancel_selector" android:layout_weight="1.0" />
+        <ImageButton android:gravity="center" android:id="@id/browser_select" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/browser_str_browser_select" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/browser_divider" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

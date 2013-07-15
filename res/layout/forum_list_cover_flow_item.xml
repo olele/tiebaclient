@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/cover_flow_item" android:padding="7.0dip" android:layout_width="168.0dip" android:layout_height="168.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.tieba.flist.FlistImageView android:id="@id/avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="@drawable/bg_recommend_cloud" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffc7ceda" android:id="@id/slogan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:maxLines="2" />
+    </LinearLayout>
+</FrameLayout>

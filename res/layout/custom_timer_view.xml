@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/custom_timer_view" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/hour_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/hour_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时" />
+    <TextView android:id="@id/min_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/min_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分" />
+    <TextView android:id="@id/sec_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/sec_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="秒" />
+</LinearLayout>

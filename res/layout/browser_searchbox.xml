@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.browser.FloatSearchBoxLayout android:id="@id/float_MainRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <EditText android:textSize="16.0dip" android:id="@id/SearchTextInput" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="40.0dip" android:singleLine="true" />
+            <ImageView android:id="@id/go_btn" android:layout_width="wrap_content" android:layout_height="35.0dip" android:src="@drawable/browser_toolbar_forward_btn" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.baidu.browser.FloatSearchBoxLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/home_lv_markitem" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/home_lv_markitem_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/home_lv_markitem_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:text="title" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+            <ImageView android:id="@id/mark_author_icon" android:background="@drawable/icon_little_people_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff727272" android:id="@id/home_lv_markitem_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="user" />
+            <ImageView android:id="@id/mark_comment_icon" android:background="@drawable/icon_little_comment_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff727272" android:id="@id/home_lv_markitem_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="999+" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ffbebebe" android:gravity="center_horizontal" android:id="@id/forum_lv_nodata" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/mark_nodata" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/home_lv_markitem_delete" android:background="@null" android:padding="10.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_delete" />
+</LinearLayout>

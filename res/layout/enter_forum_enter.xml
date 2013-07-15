@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lottery_image" android:visibility="gone" android:layout_width="320.0dip" android:layout_height="176.0dip" android:layout_marginBottom="5.0dip" android:scaleType="fitCenter" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/home_search_bg_layout" android:background="@drawable/inputbox_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:layout_below="@id/lottery_image">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/home_search_logo" />
+        <TextView android:textSize="12.0sp" android:textColorHint="#ffa5a6a8" android:layout_gravity="left|center" android:id="@id/search_bar_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_bar_post" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/lv_seperator" android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/home_search_bg_layout" android:layout_alignParentBottom="true" />
+</RelativeLayout>

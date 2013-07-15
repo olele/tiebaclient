@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/first" android:background="@drawable/bg_banner" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/forum_icon1" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginLeft="5.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/home_lv_like_forum1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_toRightOf="@id/forum_icon1" />
+        <TextView android:textSize="9.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/forum_lv_like_grade1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_below="@id/home_lv_like_forum1" android:layout_alignLeft="@id/home_lv_like_forum1" />
+        <ImageView android:id="@id/icon_sign1" android:background="@drawable/ico_sign_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/second" android:background="@drawable/bg_banner" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/forum_icon2" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginLeft="5.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/home_lv_like_forum2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_toRightOf="@id/forum_icon2" />
+        <TextView android:textSize="9.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/forum_lv_like_grade2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_below="@id/home_lv_like_forum2" android:layout_alignLeft="@id/home_lv_like_forum2" />
+        <ImageView android:id="@id/icon_sign2" android:background="@drawable/ico_sign_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

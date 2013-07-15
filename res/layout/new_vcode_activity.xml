@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/new_vcode_activity_layout" android:background="@color/backgroundcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/title_margin">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/back" style="@style/comm_controls" />
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/post" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send" style="@style/title_comm" />
+    </LinearLayout>
+    <com.baidu.tieba.view.BaseWebView android:id="@id/new_vcode_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffc8c8c8" android:gravity="center" android:id="@id/webview_fail_view" android:background="@color/backgroundcolor" android:padding="50.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/load_fail" android:drawableTop="@drawable/fail_bg" android:drawablePadding="10.0dip" android:layout_below="@id/title" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/load_webview_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" android:layout_centerInParent="true" style="?android:attr/progressBarStyleInverse" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/change_vcode_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" android:layout_centerInParent="true" style="?android:attr/progressBarStyleInverse" />
+</RelativeLayout>

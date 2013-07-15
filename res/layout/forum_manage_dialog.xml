@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/floating_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff262626" android:gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="吧务管理" />
+    <Button android:textSize="18.0dip" android:textColor="@color/text_black_white_color" android:gravity="center" android:id="@id/del_post_btn" android:background="@drawable/btn_wb_square" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="16.0dip" android:text="删除贴子" />
+    <Button android:textSize="18.0dip" android:textColor="@color/text_black_white_color" android:gravity="center" android:id="@id/forbid_user_btn" android:background="@drawable/btn_wb_square" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="封禁用户" />
+</LinearLayout>

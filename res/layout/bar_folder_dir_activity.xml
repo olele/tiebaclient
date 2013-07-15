@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parent" android:background="@color/backgroundcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <com.baidu.adp.widget.ListView.BdListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="@*android:color/transparent" android:divider="@null" style="@style/auto_skin_list" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleInverse" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="top" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/title_margin">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/comm_controls" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/title_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/title_info_shadow" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/home" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/comm_controls" />
+    </LinearLayout>
+</RelativeLayout>

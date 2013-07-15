@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.mapapi.MapView android:id="@id/bd_mapview" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff262626" android:gravity="left|center" android:id="@id/location_text" android:background="#b3ffffff" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="@string/def_pos" android:singleLine="true" android:drawableLeft="@drawable/nearby_my" android:drawablePadding="3.0dip" android:layout_alignParentTop="true" />
+    <Button android:id="@id/pack_up" android:background="@drawable/nearby_pack_up_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

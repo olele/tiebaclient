@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/footer_background" android:background="@drawable/bg_black_banner_down" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textColor="#ff8791a2" android:gravity="center_vertical" android:id="@id/footer_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="展开更多推荐" />
+        <ImageView android:id="@id/footer_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ico_downward" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="5.0dip" />
+</LinearLayout>

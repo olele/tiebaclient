@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentLeft="true">
+        <com.baidu.tieba.view.ADImageViewDrawer android:id="@id/ad1" android:layout_width="@dimen/ad_image_width" android:layout_height="@dimen/ad_image_height" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/layout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true">
+        <com.baidu.tieba.view.ADImageViewDrawer android:id="@id/ad2" android:layout_width="@dimen/ad_image_width" android:layout_height="@dimen/ad_image_height" />
+    </LinearLayout>
+</RelativeLayout>

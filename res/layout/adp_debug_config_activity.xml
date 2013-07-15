@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/monitor_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/debug_switch_setting" android:background="#ff66cc99" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="38.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/debug_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="客户端debug模式" android:singleLine="true" android:layout_weight="1.0" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/close_debug" android:background="@drawable/adp_debug_close_debug_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <View android:background="#ff66c000" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <include layout="@drawable/adp_debug_monitor_switch_item" />
+    <include layout="@drawable/adp_debug_item_line" />
+    <include layout="@drawable/adp_debug_close_item" />
+    <include layout="@drawable/adp_debug_item_line" />
+    <include layout="@drawable/adp_debug_update_package_item" />
+    <include layout="@drawable/adp_debug_item_line" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/adp_debug_custom_configs_list" android:focusableInTouchMode="true" android:fadingEdge="vertical" android:fadingEdgeLength="3.0dip" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:divider="@null" android:fastScrollEnabled="true" android:smoothScrollbar="true" />
+    </FrameLayout>
+</LinearLayout>

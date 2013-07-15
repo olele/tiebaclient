@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/container" android:background="@drawable/bg_title_tj" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ffc1c2c3" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/tip_text" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:text="@string/recommend_forums" style="@style/text_shadow_style_1" />
+</LinearLayout>

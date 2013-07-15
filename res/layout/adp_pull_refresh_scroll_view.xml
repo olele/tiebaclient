@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="1200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/head_ly" android:background="#ffff0000" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="-61.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/content_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/foot_ly" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/title_margin">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/relogin_bt_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/comm_controls" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/relogin_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_centerHorizontal="true" />
+        <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/relogin_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:indeterminateDrawable="@drawable/progressbar" android:layout_below="@id/relogin_textview" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleInverse" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/relogin_progressbar">
+            <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/relogin_cacel_button" android:background="@drawable/relogin_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/relogin_cacel" />
+            <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/relogin_retry_button" android:background="@drawable/relogin_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/relogin_retry" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

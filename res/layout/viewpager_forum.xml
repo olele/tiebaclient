@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bg_rel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/advice_ly" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_alignParentTop="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ff98a0af" android:id="@id/advice_text" android:paddingLeft="85.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐：" />
+            <ImageView android:id="@id/star1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/star2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/star3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/star4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/star5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/daily_icon" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:text="每日\n一吧" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <RelativeLayout android:gravity="center" android:id="@id/avator_bg" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <com.baidu.tieba.view.ImageViewDrawer android:id="@id/avator" android:layout_width="68.0dip" android:layout_height="68.0dip" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:id="@id/forum_name_tx" android:paddingLeft="85.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/advice_ly" android:layout_alignParentLeft="true" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/counts" android:paddingLeft="85.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/forum_name_tx" android:layout_alignParentLeft="true">
+            <TextView android:textSize="10.0sp" android:gravity="center_vertical" android:id="@id/forum_memeber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="3.0dip" />
+            <TextView android:textSize="10.0sp" android:gravity="center_vertical" android:id="@id/thread_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:drawablePadding="3.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:id="@id/recommend_reason" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" android:layout_below="@id/counts" />
+        <com.baidu.tieba.view.PageIndex android:id="@id/page_num" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

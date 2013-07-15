@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/floating_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff262626" android:gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/more" />
+    <Button android:textSize="18.0sp" android:textColor="@color/text_black_white_color" android:gravity="center" android:id="@id/delete_chat" android:background="@drawable/btn_wb_square" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/delete_all_user_chat" />
+</LinearLayout>

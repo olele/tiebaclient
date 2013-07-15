@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parent" android:background="@drawable/tag_ground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/refresh" />
+    <FrameLayout android:id="@id/progress_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom" android:layout_below="@id/refresh">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleInverse" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/topBar" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tagsGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/page1" android:background="@drawable/tag_page_rb_normal" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginLeft="10.0dip" />
+            <ImageView android:id="@id/page2" android:background="@drawable/tag_page_rb_click" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginLeft="10.0dip" />
+            <ImageView android:id="@id/page3" android:background="@drawable/tag_page_rb_click" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+        <Button android:id="@id/refresh" android:background="@drawable/tag_refresh_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <com.baidu.tieba.view.HeartButton android:id="@id/heart" android:background="@drawable/tag_heart_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/next" android:background="@drawable/tag_next_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

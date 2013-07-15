@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="311.0dip" android:layout_height="391.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dialog_bg" android:background="@drawable/local_popularize_bg" android:layout_width="305.0dip" android:layout_height="389.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <Button android:id="@id/dialog_button_ok" android:background="@drawable/lbs_local_popularize_goto" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:id="@id/dialog_button_cancel" android:background="@drawable/lbs_local_popularize_continue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:id="@id/dialog_button_close" android:background="@drawable/lbs_local_popularize_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

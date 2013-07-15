@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="32" android:versionName="4.2.2" package="com.baidu.tieba"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:theme="@style/tieba_app" android:label="@string/app_name" android:icon="@drawable/icon" android:name=".TiebaApplication" android:debuggable="false">
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="08dfac6d94" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:name=".LogoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LabelActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".account.LoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".flist.ForumListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:name=".GuideActivity" android:taskAffinity="com.baidu.tieba.sub" android:excludeFromRecents="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:noHistory="true">
+            <intent-filter />
+        </activity>
+        <activity android:name=".account.RegisterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".account.Register2Activity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".account.ActivationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".account.ProtocolActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".account.AccountVcodeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".account.ReLoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".account.ReLoginShareActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".MainTabActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:alwaysRetainTaskState="true" android:windowSoftInputMode="adjustPan">
+            <intent-filter />
+        </activity>
+        <activity android:name=".home.EnterForumActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize">
+            <intent-filter />
+        </activity>
+        <activity android:name=".home.SearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize">
+            <intent-filter />
+        </activity>
+        <activity android:name=".home.ForumTopicActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".recommend.NewHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".nearby.NewNearbyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".nearby.NearbyForumActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".nearby.NearbyPostActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".nearby.NearbyPbActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden">
+            <intent-filter />
+        </activity>
+        <activity android:name=".person.AllPostActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".person.MyPostActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".person.PersonLbsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".home.CreateBarActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".home.CreateBarSuccessActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:name=".home.LikeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".home.MarkActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".frs.FrsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".frs.FrsImageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mention.MentionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".mention.ReplyMeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".mention.AtMeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".mention.PostActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".person.PersonInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".person.PersonChangeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".more.MoreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".more.MsgRemindActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".more.SignRemindActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".more.BrowseSettingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".pb.NewPbActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name=".media.MediaPlayerActivity" android:process=":remote" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pb.ImagePbActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustResize">
+            <intent-filter />
+        </activity>
+        <activity android:name=".write.WriteActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter />
+        </activity>
+        <activity android:name=".write.VcodeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter />
+        </activity>
+        <activity android:name=".write.NewVcodeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden">
+            <intent-filter />
+        </activity>
+        <activity android:name=".write.AtListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".write.WriteImageActivity" android:process=":remote" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".pb.ImageActivity" android:process=":remote" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".pb.WebActivity" android:process=":remote" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".pb.WebBdActivity" android:process=":remote" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".person.PersonListActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:name=".person.EditMarkActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:name=".person.EditBarActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:name=".person.EditHeadActivity" android:process=":remote" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@style/UpdateStyle" android:name=".UpdateDialog" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:name=".more.AccountActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:name=".more.AboutActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:name=".more.AppsActivity" android:screenOrientation="portrait">
+            <intent-filter />
+        </activity>
+        <activity android:name=".nearby.NearbyMapActivity" android:process=":remote" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".recommend.TagContentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name="com.baidu.tieba.recommend.DailyClassicalActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name="com.baidu.tieba.chat.ChatListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <activity android:name=".chat.ChatActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter />
+        </activity>
+        <activity android:name=".square.BarFolderFirstDirActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter />
+        </activity>
+        <activity android:name=".square.BarFolderSecondDirActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter />
+        </activity>
+        <service android:name=".service.TiebaUpdateService" android:enabled="true" android:process=":remote">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.ClearTempService" android:enabled="true" android:process=":remote">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.FatalErrorService" android:enabled="true" android:process=":remote">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.TiebaSyncService" android:enabled="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.PerformMonitorService" android:enabled="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.DealIntentService" android:enabled="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.TiebaActiveService" android:enabled="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.TiebaMessageService" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.baidu.tieba.service.Message" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.TiebaPrepareImageService" android:enabled="true" android:process=":remote">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".service.TiebaReceiver">
+            <intent-filter>
+                <action android:name="com.baidu.tieba.broadcast.service" />
+                <action android:name="com.baidu.tieba.broadcast.sync" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.ChangeSkinReceiver" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.tieba.broadcast.changeskin" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.StartMessageReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.SignAlertReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.baidu.tieba.broadcast.signalert" />
+                <data android:scheme="tieba_sign" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote" />
+        <service android:name=".service.MessagePullService" android:enabled="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver" android:process=":pushservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.android.pushservice.RegistratonReceiver" android:process=":pushservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.android.pushservice.PushService" android:process=":pushservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="tieba_page" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.baidu.tieba.service.WebNativeReceiver">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.share.ShareReceiver" android:permission="com.baidu.permission.SHARE">
+            <intent-filter>
+                <action android:name="baidu.intent.action.SHARE" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name="com.baidu.adp.lib.debug.DebugConfigActivity" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter />
+        </activity>
+        <service android:name="com.baidu.adp.lib.debug.service.DebugService" android:enabled="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.baidu.adp.lib.debug.service.SwitchDebugService" android:enabled="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.baidu.adp.lib.debug.BatteryMonitor.mBatteryReceiver">
+            <intent-filter />
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission android:label="@string/share_label" android:name="com.baidu.permission.SHARE" android:protectionLevel="dangerous" android:permissionGroup="android.permission-group.PERSONAL_INFO" android:description="@string/share_desctription" />
+    <uses-permission android:name="com.baidu.permission.SHARE" />
+</manifest>
